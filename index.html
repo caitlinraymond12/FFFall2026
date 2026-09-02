@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My first website</title>
-        <!--this is a comment. these are useful for notes. -->
-        <!-- these meta tags are used by the search engine -->
-        <meta name="description" content="This is my first website"> 
+        <title>CoffeeCalendar</title>
+        <meta name="description" content="About the CoffeeCalendar Product"> 
         <meta name="author" context="Caitlin Raymond">
-        <meta name="keywords" context="html, css, learning">
-        <!-- this meta tag encodes by characters and is used by the browser -->
+        <meta name="keywords" context="Coffee, AdventCalendar, Product">
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
        <header>
-        <h1>Video Games</h1>
-        <nav></nav>
+        <h1>CoffeeCalendar</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Product Overview</a></li>
+                <li><a href="#recipies">Example Recipies</a></li>
+                <li><a href="#features">Design Features</a></li>
+                <li><a href="#photos">Photos</a></li>
+            </ul>
+        </nav>
        </header> 
        <main>
-        <section>
-            <h2>Origins</h2>
+        <section id="overview">
+            <h2>Product Overview</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga adipisci iusto beatae praesentium tempora pariatur eum sed. Pariatur, porro omnis, sequi quasi reprehenderit non culpa laborum necessitatibus, hic aliquam officiis?</p>
         </section>
         <section>
-            <h2>My Favorite Games</h2>
-            <ol>
-                <li>Game 1</li>
-                <li>Game 2</li>
-                <li>Game 3</li>
-            </ol>
-        </section>
-        <section>
-            <h2>My Favorite Game Characters</h2>
+            <h2 id="recipies">Example Recipies</h2>
             <ul>
-                <li>Character 1</li>
-                <li>Character 2</li>
-                <li>Character 3</li>
+                <li>Pumpkin Spice Latte</li>
+                <li>Iced Caramel Macchiato</li>
+                <li>Iced Shaken Espresso</li>
             </ul>
         </section>
-        <section>
-            <h5>Inline Tags</h5>
-            <p>This content is <strong>strong</strong>
-            <p>This context is <b>bold</b></p>
-            <p>Visually, <strong>strong</strong> and <b>bold</b> look the same</p>
-            <p>This content is <em>emphasized</em></p>
-            <p>This context is <i>italicized</i></p>
-            <p>Again, an <em>emphasized</em> word and an <i>italicized</i> word look the same. </p>
-            <p>This <a href="http://ww.google.com" target="_blank">link goes to Google.com</a></p>
-            <p>This is an image of a controller using an absolute link 
-                <a href="https://images.pexels.com/photos/15592023/pexels-photo-15592023.jpeg" target="_blank" alt="Game Controller">here</a></p>
-            <p>This is an image of a controller using a relative link
-                <img src="images/controller.jpg" alt="game controller"></p>
+        <section id="features">
+            <h2>Design Features</h2>
+            <ol>
+                <li>Reusable</li>
+                <li>Easy to Follow</li>
+                <li>Modifiable Recipies</li>
+            </ol>
+        </section>
+        <section id="photos">
+            <h2>Photos</h2>
+            <!-- Royalty Free Photos from pexels.com -->
+            <img src="images/iced_latte.jpg" alt="Iced Latte">
         </main>
+        </section>
 
        <footer></footer>
     </body>
