@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Unkempt:wght@400;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+h1, h2, h3, h4, a{
+    font-family: "Unkempt";
+    font-weight: 700;
+}
+
+body {
+  background-color: #F8EDE5;
+}
 
 img {
   max-width: 300px;
   height: auto; 
   padding: 20px;
-  border: 10px purple solid;
 }
 
 li img {
@@ -13,8 +27,9 @@ li img {
 }
 
 header{
+  background-image: url("../images/coffee_beans.jpg");
+  background-size: cover;
   width: 960px;
-  border: 1px blue solid;
   padding: 10px;
   margin-top: -7px;
   margin-bottom: 20px;
@@ -23,7 +38,6 @@ header{
 
 main{
   width: 960px;
-  border: 1px blue solid;
   margin: 0 auto;
   padding: 10px;
 }
@@ -31,40 +45,126 @@ main{
 footer{
   width: 960px;
   height: 10px;
-  border: 1px blue solid;
   margin: 0 auto;
   padding: 10px;
 
 }
 
-nav{
+header h1{
+  background-color: #4A8CB0;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 50px;
+}
 
+nav{
+  background-color: #4A8CB0;
+  border-radius: 20px;
+  padding-right: 20px;
 } 
 
 nav ul {
-  height: 100px;
+  height: 70px;
   display: grid;
-  grid-template-columns: 200px 200px 200px ;
+  grid-template-columns: 150px 150px 150px 150px ;
   grid-template-rows: 30px;
-  gap: 10px;
+  gap: 5px;
   justify-content: space-between;
-  align-content: center;  
+  align-content: center;
+
 }
 
 nav ul li {
   list-style: none;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 nav ul li a {
-
+  color: black;
+  text-decoration: none;
 }
 
 nav ul li a:hover{
-  color:cornflowerblue;
+  color: white;
 }
 
-.inline {
-  display: inline-block;
-  margin: 10px;
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
 }
+
+.features h3 {
+  text-align: center;
+  background-color: #016180;
+  color: white;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+
+.features p {
+  text-align: center;
+}
+
+.recipe {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.recipe_example {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.recipe_text {
+  background-color: #4C2C17;
+  color: white;
+  padding: 10px 50px 20px;
+}
+
+.recipe_example p{
+  text-align: left;
+}
+
+
+.recipe_example img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  justify-self: end;
+  border-width: 10px;
+  border-color: #4C2C17;
+  border-style:solid;
+}
+
+.review-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+}
+
+.review {
+  background-color: #4A8CB0;
+  border-radius: 30px;
+  padding: 40px;
+  line-height: 30px;
+  border-width: 10px;
+
+  border-color: #016180;
+  border-style:dotted;
+}
+
+
 
