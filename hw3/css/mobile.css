@@ -28,6 +28,13 @@ nav ul li{
 
 }
 
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
 .imagegallery{
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: auto;
@@ -43,4 +50,14 @@ nav ul li{
   grid-template-rows: auto;
   justify-content: space-between;
   text-align: center;
+}
+
+.review {
+  background-color: #4A8CB0;
+  border-radius: 30px;
+  padding: 15px;
+  line-height: 30px;
+  border-width: 5px;
+  border-color: #016180;
+  border-style:dotted;
 }
