@@ -1,0 +1,25 @@
+@import url(style.css);
+
+header, main, footer{
+    width: 360px;
+}
+
+nav ul{
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    height: auto;
+}
+
+nav ul li{
+        width: 100%;
+
+}
+
+.imagegallery{
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
+}
+
+.imagegallery img{
+    width: 100%;
+}
