@@ -16,11 +16,9 @@ header h1{
 
 
 nav ul{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     height: auto;
-    text-align: center;
-    margin-right: 25px;
 }
 
 nav ul li{
