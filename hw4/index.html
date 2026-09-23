@@ -6,11 +6,13 @@
         <meta name="author" content="Caitlin Raymond">
         <meta name="keywords" content="Coffee, AdventCalendar, Product">
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" media="(min-width: 800px)">
         <link rel="stylesheet" href="css/tablet.css" media="(min-width: 460px) and (max-width: 799px)">
         <link rel="stylesheet" href="css/mobile.css" media="(max-width: 459px)">
+
+        <script src="js/listeners.js" defer></script>
         
-        <!-- <meta viewport= content="width-device-width, initial-scale=1.0" /> -->
     </head>
     <body>
        <header>
@@ -25,8 +27,12 @@
         </nav>
        </header> 
        <main>
+        <section class="mode">
+            <h2 id = "light">Light Mode</h2>
+            <h2 id = "dark">Dark Mode</h2>
+        </section>
         <section id="overview">
-            <h2>Product Overview</h2>
+            <h2 id = "test">Product Overview</h2>
             <p>
                 CoffeeCalendar is a one of a kind advent calendar that can be used year round! Small enough to fit anywhere in your kitchen, it provides unique coffee recipes for every week of the year. Mid-July? Try out the perfect recipe for our <strong>Salted Honey Latte</strong>. End of December? Cuddle up with our signature <strong>Gingerbread Mocha.</strong> Ditch the days of boring, bitter coffee, and add something to your routine that will actually get you out of bed and excited for the day! 
             </p>
@@ -57,7 +63,7 @@
             <h2 id="recipes">Favorite Recipes From Each Season</h2>
             <!-- Royalty Free Photos from pexels.com -->
             <section class="recipe_example">
-            <div class = "recipe_text">
+            <div id = "spring" class = "recipe_text">
                 <h3>Spring</h3>
                 <h4>Iced Lavender Latte </h4>
                 <p>Step 1: Make Lavender Simple Syrup by bringing water, sugar, and dried lavender to a boil. Then, let simmer it for 10 minutes. Finally, remove from heat and let infuse for an hour  </p>
@@ -69,7 +75,7 @@
             <img src="images/lavender_latte.jpg" alt="Iced Latte">
             </section>
             <section class="recipe_example">
-            <div class = "recipe_text">
+            <div id = "summer" class = "recipe_text">
                 <h3>Summer</h3>
                 <h4>Iced Vietnamese Coffee </h4>
                 <p>Step 1: Pour 2 Tablespoons of Sweetend Condensed Milk in a tall glass</p>
@@ -79,7 +85,7 @@
             <img src="images/iced_coffee.jpg" alt="Iced Coffee">
             </section>
             <section class="recipe_example">
-            <div class = "recipe_text">
+            <div id = "fall" class = "recipe_text">
                 <h3>Fall</h3>
                 <h4>Maple Macchiato </h4>
                 <p>Step 1: Heat up milk on stovetop </p>
@@ -91,7 +97,7 @@
             <img src="images/hot_latte.jpg" alt="Hot Latte">
             </section>
             <section class="recipe_example">
-            <div class = "recipe_text">
+            <div id = "winter" class = "recipe_text">
                 <h3>Winter</h3>
                 <h4>Pumpkin Cream Cold Brew </h4>
                 <p>Step 1: Mix 1/2 cup of heavy cream, 2 tablespoons maple syrup, 2 tablespoons pumpkin puree, and 1/4 teaspon pumpkin pie spice in a bowl</p>

@@ -2,6 +2,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Unkempt:wght@400;700&display=swap');
 
+
+:root {
+  --background: #F8EDE5;
+  --primary: #4C2C17;
+  --light-accent: #4A8CB0;
+  --dark-accent: #016180;
+  --font: black;
+  --opposite-font: white;
+}
+
+.light-theme {
+  --background: #F8EDE5;
+  --primary: #4C2C17;
+  --light-accent: #4A8CB0;
+  --dark-accent: #016180;
+  --font: black;
+  --opposite-font: white;
+}
+
+.dark-theme {
+  --background: #7A5A44;
+  --primary: #E8E2D6;
+  --light-accent: #5F7A63;
+  --dark-accent: #2A3F33;
+  --font: white;
+  --opposite-font: black;
+}
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,7 +42,8 @@ h1, h2, h3, h4, a{
 }
 
 body {
-  background-color: #F8EDE5;
+  background-color: var(--background);
+  color: var(--font);
 }
 
 img {
@@ -50,7 +81,7 @@ footer{
 }
 
 header h1{
-  background-color: #4A8CB0;
+  background-color: var(--light-accent);
   color: black;
   text-align: center;
   padding: 5px;
@@ -60,7 +91,7 @@ header h1{
 }
 
 nav{
-  background-color: #4A8CB0;
+  background-color: var(--light-accent);
   border-radius: 20px;
   padding-right: 20px;
 } 
@@ -100,7 +131,7 @@ nav ul li a:hover{
 
 .features h3 {
   text-align: center;
-  background-color: #016180;
+  background-color: var(--dark-accent);
   color: white;
   border-radius: 50px;
   padding: 5px;
@@ -127,8 +158,8 @@ nav ul li a:hover{
 }
 
 .recipe_text {
-  background-color: #4C2C17;
-  color: white;
+  background-color: var(--primary);
+  color: var(--opposite-font);
   padding: 10px 50px 20px;
 }
 
@@ -143,7 +174,7 @@ nav ul li a:hover{
   object-fit: cover;
   justify-self: end;
   border-width: 10px;
-  border-color: #4C2C17;
+  border-color: var(--primary);
   border-style:solid;
 }
 
@@ -155,15 +186,36 @@ nav ul li a:hover{
 }
 
 .review {
-  background-color: #4A8CB0;
+  background-color: var(--light-accent);
   border-radius: 30px;
   padding: 40px;
   line-height: 30px;
   border-width: 10px;
 
-  border-color: #016180;
+  border-color: var(--dark-accent);;
   border-style:dotted;
 }
 
+.fadeout {
+  transition: background-color 0.5s ease;
+}
+
+
+.mode {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  text-align: center;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
 
 
