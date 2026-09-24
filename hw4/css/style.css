@@ -196,6 +196,31 @@ nav ul li a:hover{
   border-style:dotted;
 }
 
+.review-buttons{
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 70px;
+  gap: 80px;
+  justify-content: space-between;
+  margin: 0px 300px 0px 300px;
+  
+}
+
+.button {
+    background-color: var(--dark-accent);
+    color: white;
+    
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    
+    border-radius: 50%;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 .fadeout {
   transition: background-color 0.5s ease;
 }

@@ -75,9 +75,33 @@ dark.addEventListener("click", function() {
     document.body.classList.remove("light-theme");
 })
 
+let fillText = document.getElementById("review-text");
 
+let review1 = document.getElementById("r1");
+let review2 = document.getElementById("r2");
+let review3 = document.getElementById("r3");
 
+review1.style.backgroundColor = "var(--dark-accent)"
+review2.style.backgroundColor = "var(--light-accent)"
+review3.style.backgroundColor = "var(--light-accent)" 
 
+review1.addEventListener("click", function(){
+    fillText.innerText = "This product is the BEST! I've been using it every single morning for 3 months now. I'm a huge coffee lover, so it has been amazing for me to discover new recipes and try flavor combinations I have never considered before. Couldn't recommend it enough. -Maria. Miami, FL";
+    review1.style.backgroundColor = "var(--dark-accent)"
+    review2.style.backgroundColor = "var(--light-accent)"
+    review3.style.backgroundColor = "var(--light-accent)"    
+})
 
+review2.addEventListener("click", function(){
+    fillText.innerText = "I absolutely love this product. I've been wanting to get more into coffee and all the different types, but I never knew where to start! This product has inspired me to branch out beyond my basic iced coffee and learn how to make macchiatos, cappuccinos, and lattes. I've become the barista of my friend group. -Chloe. New York, NY";
+    review1.style.backgroundColor = "var(--light-accent)"
+    review2.style.backgroundColor = "var(--dark-accent)"
+    review3.style.backgroundColor = "var(--light-accent)"  
+})
 
-
+review3.addEventListener("click", function(){
+    fillText.innerText = "My favorite part of this product is the themed drinks. I love seeing how my morning coffee changes with the seasons. It gives me something to constantly look forward too, and I get excited every Monday morning to flip the page and reveal a brand new recipe for me to try! -Ivy. Knoxville, TN";
+    review1.style.backgroundColor = "var(--light-accent)"
+    review2.style.backgroundColor = "var(--light-accent)"
+    review3.style.backgroundColor = "var(--dark-accent)"  
+})
