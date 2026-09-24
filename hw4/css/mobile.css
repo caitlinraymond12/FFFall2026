@@ -61,3 +61,29 @@ nav ul li{
   border-color: #016180;
   border-style:dotted;
 }
+
+
+.review-buttons{
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+  grid-template-rows: 70px;
+  gap: 30px;
+  justify-content: space-between;
+  margin: 0px 70px 0px 55px;
+  
+}
+
+.button {
+    background-color: var(--dark-accent);
+    color: white;
+    
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    
+    border-radius: 50%;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
