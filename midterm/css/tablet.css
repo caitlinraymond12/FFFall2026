@@ -1,1 +1,44 @@
 @import url(style.css);
+
+
+header, main, footer{
+    width: 700px;
+}
+
+header h1{
+  background-color: var(--dark-accent);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 50px;
+}
+
+.breakfast_items img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+
+.attraction-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 15px;
+}
+
+.attraction-item img{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.attraction-item{
+  display: none;
+  text-align: center;
+  background-color: var(--light-accent);
+  padding: 20px;
+}
