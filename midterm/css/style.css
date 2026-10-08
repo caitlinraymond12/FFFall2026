@@ -1,0 +1,229 @@
+
+:root {
+  --background: #f9edf0;
+  --light-accent: #c3955b;
+  --light-accent-click: #ba6a36;
+  --dark-accent: #1c3934;
+  --accent: #dce9ee;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: var(--background);
+}
+
+header{
+  width: 960px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+main{
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+footer{
+  width: 960px;
+  height: 10px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+header h1{
+  background-color: var(--dark-accent);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-left: 125px;
+  margin-right: 125px;
+  border-radius: 50px;
+}
+
+nav{
+  background-color: var(--light-accent);
+  border: 10px var(--light-accent-click) groove;
+} 
+
+nav ul {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: auto;
+  gap: 5px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: white;
+}
+
+
+.section_headings {
+  background-color: var(--dark-accent);
+  text-align: center;
+  color: white;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+
+.breakfast_items_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.breakfast_items {
+  background-color: var(--light-accent);
+  padding: 5px;
+}
+
+.breakfast_items p{
+  text-align: center;
+}
+
+.breakfast_items h3 {
+  text-align: center;
+}
+
+.breakfast_items img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.attraction-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 15px;
+}
+
+
+.attraction-item{
+  display: none;
+  text-align: center;
+  background-color: var(--light-accent);
+  padding: 20px;
+}
+
+.attraction-item img{
+  width: 900px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.attraction-buttons {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.attraction-buttons button{
+  background-color: var(--dark-accent);
+  padding: 15px;
+  color: white;
+}
+
+.attraction-buttons button:hover{
+  background-color: #0f1e1c;
+  padding: 15px;
+  color: white;
+}
+
+.activity_question {
+  text-align: center;
+}
+
+.select_activities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.select_activity {
+  text-align: center;
+  background-color: var(--light-accent);
+  margin-bottom: 50px;
+}
+
+.select_activity:hover {
+  background-color: var(--light-accent-click);
+}
+
+.activities {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 15px;
+}
+
+.activity {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  grid-template-rows: auto;
+  gap: 15px;
+  background-color: var(--light-accent);
+  padding: 10px;
+  align-items: center;
+}
+
+.activity img{
+  width: 200px;
+  height: 200px;
+}
+
+.activity:hover{
+  background-color: var(--light-accent-click);
+}
+
+.activity.selected { 
+  background-color: var(--light-accent-click); 
+}
+
+
+.selection {
+  background-color: var(--accent);
+  padding: 15px;
+  border-width: 5px;
+  border-color: rgb(244, 91, 91);
+  border-style: solid;
+}
+
+
+.day {
+  background-color: #dce9ee;
+  border-color: #1c3934;
+  text-align: center;
+  padding: 50px;
+  border-width:  10px;
+  border-color:  var(--dark-accent);
+  border-style: solid;
+  border-radius: 30px;
+}
+
+
+
+
+

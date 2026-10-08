@@ -1,0 +1,95 @@
+@import url(style.css);
+
+
+header, main, footer{
+    width: 360px;
+}
+
+header h1{
+  background-color: var(--dark-accent);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 25px;
+}
+
+
+nav{
+  background-color: var(--light-accent);
+  border: 10px var(--light-accent-click) groove;
+  padding-right: 35px;
+} 
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 5px;
+  text-align: center;
+}
+
+.breakfast_items_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.breakfast_items img{
+  margin-left: 20px;
+}
+
+
+.attraction-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 15px;
+}
+
+.attraction-item img{
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.attraction-item{
+  display: none;
+  text-align: center;
+  background-color: var(--light-accent);
+  padding: 10px;
+}
+
+.attraction-buttons {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+
+
+
+
+.activity {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 15px;
+  background-color: var(--light-accent);
+  padding: 15px;
+  align-items: center;
+}
+
+.activity h4 {
+    text-align: center;
+}
+
+.activity img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
