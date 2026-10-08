@@ -166,6 +166,7 @@ nav ul li a:hover{
   text-align: center;
   background-color: var(--light-accent);
   margin-bottom: 50px;
+  padding: 25px;
 }
 
 .select_activity:hover {
