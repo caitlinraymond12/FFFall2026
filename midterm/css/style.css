@@ -1,9 +1,9 @@
 
 :root {
-  --background: #f9edf0;
-  --light-accent: #c3955b;
-  --light-accent-click: #ba6a36;
-  --dark-accent: #1c3934;
+  --background: #e9f6f9;
+  --light-accent: #482a02;
+  --light-accent-click: #5c4427;
+  --dark-accent: #698133;
   --accent: #dce9ee;
 
 }
@@ -49,6 +49,7 @@ header h1{
 nav{
   background-color: var(--light-accent);
   border: 10px var(--light-accent-click) groove;
+  
 } 
 
 nav ul {
@@ -66,7 +67,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -98,10 +99,12 @@ nav ul li a:hover{
 
 .breakfast_items p{
   text-align: center;
+  color: white;
 }
 
 .breakfast_items h3 {
   text-align: center;
+  color: white;
 }
 
 .breakfast_items img {
@@ -123,6 +126,7 @@ nav ul li a:hover{
   text-align: center;
   background-color: var(--light-accent);
   padding: 20px;
+  color: white;
 }
 
 .attraction-item img{
@@ -164,6 +168,7 @@ nav ul li a:hover{
 
 .select_activity {
   text-align: center;
+  color: white;
   background-color: var(--light-accent);
   margin-bottom: 50px;
   padding: 25px;
@@ -188,6 +193,7 @@ nav ul li a:hover{
   background-color: var(--light-accent);
   padding: 10px;
   align-items: center;
+  color: white;
 }
 
 .activity img{
@@ -214,7 +220,6 @@ nav ul li a:hover{
 
 
 .day {
-  background-color: #dce9ee;
   border-color: #1c3934;
   text-align: center;
   padding: 50px;
